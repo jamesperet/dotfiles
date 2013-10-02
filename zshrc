@@ -36,10 +36,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-
-
-# My Old Shell
-
 # TextMate
 export TEXTMATE_PATH=/Applications/TextMate.app/Contents/Resources/mate
 mate () {
@@ -55,3 +51,4 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
+[[ -s ~/.bashrc ]] && source ~/.bashrc

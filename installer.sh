@@ -19,3 +19,16 @@ gem install rails -v 3.2.13
 # Install youtube-dl
 sudo curl https://yt-dl.org/downloads/2013.09.24.2/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+x /usr/local/bin/youtube-dl
+
+# Install ImageMagick
+brew install pkgconfig
+brew install imagemagick
+
+# install NVM
+git clone git://github.com/creationix/nvm.git ~/.nvm
+source ~/.nvm/nvm.sh
+echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
+nvm install v0.8.5
+nvm alias default v0.8.5
+
+echo "[[ -s ~/.bashrc ]] && source ~/.bashrc" >>
