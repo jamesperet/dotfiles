@@ -52,4 +52,3 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 [[ -s ~/.bashrc ]] && source ~/.bashrc
-
