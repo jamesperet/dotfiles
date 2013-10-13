@@ -1,0 +1,13 @@
+# Dont track dotfiles installed files
+bashrc
+oh-my-zsh/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
