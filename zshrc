@@ -52,3 +52,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 [[ -s ~/.bashrc ]] && source ~/.bashrc
+
+plugins=(rails3 git ruby brew gollum)
+
+alias gollum="/Users/james/dev/gollum/bin/gollum"
