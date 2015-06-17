@@ -92,3 +92,6 @@ source /usr/share/gist/gist.bash
 
 # teamocil autocomplete
 compctl -g '~/.teamocil/*(:t:r)' teamocil
+
+# Cask Options
+export HOMEBREW_CASK_OPTS="--caskroom=/Applications"

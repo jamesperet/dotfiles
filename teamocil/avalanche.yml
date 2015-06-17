@@ -1,0 +1,15 @@
+windows:
+  - name: avalanche
+    root: ~/dev/avalanche2
+    layout: 4303,238x60,0,0{119x60,0,0,43,118x60,120,0[118x33,120,0,44,118x12,120,34,51,118x13,120,47,49]}
+    panes:
+      - commands:
+        - echo "Starting Postgre App"
+        - open /Applications/Postgres.app
+        - echo "Opening TextMate project"
+        - git status
+        - mate ~/dev/avalanche2
+        focus: true
+      - rails c
+      - redis-server
+      - foreman start
