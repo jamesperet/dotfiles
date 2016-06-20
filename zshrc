@@ -9,7 +9,7 @@ ZSH_THEME="clean"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ohmyzsh="nano ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -36,21 +36,11 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-
-
-# TextMate
-export TEXTMATE_PATH=/Applications/TextMate.app/Contents/Resources/mate
-mate () {
-    $TEXTMATE_PATH $1 $2 $3 $4 $5 $6
-}
-export EDITOR="$TEXTMATE_PATH -w"
-export LC_CTYPE=en_US.UTF-8
-
-export EDITOR=pico
+# Set default Editor
+export EDITOR=nano
 
 # Mou
 alias mou="open /Applications/Mou.app"
-alias rails_notes="open /Applications/Mou.app ~/Dev/rails_notes/index.md"
 
 # Postgre App
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
@@ -60,35 +50,11 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-# [[ -s ~/.bashrc ]] && source ~/.bashrc
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-
-# Start Avalanche project
-avalanche2_start (){
-	# Open postgres app
-	echo "Starting Postgre App"
-	open /Applications/Postgres.app
-	# Open project in texmate
-	echo "Opening TextMate project"
-	mate ~/dev/avalanche2
-	cd ~/dev/avalanche2
-	# start rails server
-	echo "Starting Foreman server"
-	cd ~/dev/avalanche2
-	foreman start
-}
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
 
 # Open oh-my-zsh configurations in text mate
-alias zshell="mate ~/.zshrc"
-
-# SSH
-ssh_dev_machine () { ssh root@104.236.21.94 }
-ssh_gitlab () { ssh root@104.236.77.111 }
-
-# Gist
-source /usr/share/gist/gist.bash
+alias zshell="nano ~/.zshrc"
 
 # teamocil autocomplete
 compctl -g '~/.teamocil/*(:t:r)' teamocil
