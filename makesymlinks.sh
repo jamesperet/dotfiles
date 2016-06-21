@@ -56,4 +56,10 @@ else
 fi
 }
 
+function install_teamocil_files {
+  mkdir $HOME/.teamocil
+  cp teamocil/avalanche.yml $HOME/.teamocil/avalanche.yml
+}
+
 install_zsh
+install_teamocil_files

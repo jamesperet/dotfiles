@@ -61,3 +61,6 @@ compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 # Cask Options
 export HOMEBREW_CASK_OPTS="--caskroom=/Applications"
+
+# NVM
+source $(brew --prefix nvm)/nvm.sh
