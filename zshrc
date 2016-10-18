@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="clean"
+#ZSH_THEME="agnoster"  
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -60,7 +61,15 @@ alias zshell="nano ~/.zshrc"
 compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 # Cask Options
-export HOMEBREW_CASK_OPTS="--caskroom=/Applications"
+#export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
 
 # NVM
 source $(brew --prefix nvm)/nvm.sh
+
+[ -n "$TMUX" ] && export TERM=screen-256color
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+alias node_use_v4.3.2="nvm use v4.3.2;nvm use --delete-prefix v4.3.2"
+
